@@ -18,6 +18,7 @@ cd newproject
 
 mkdir analysis output
 touch README.md
+echo "# Project Name: DSI Consulting Inc." > README.md
 touch analysis/main.py
 
 # download client data
@@ -53,9 +54,14 @@ cp ./data/raw/*event*.log ./data/processed/event_logs
 rm ./data/raw/*ipaddr*
 rm ./data/processed/user_logs/*ipaddr*
 
+
 # 8. Create a file named ./data/inventory.txt that lists all the files in the subfolders of ./data/processed
 touch ./data/inventory.txt
 ls ./data/processed/server_logs ./data/processed/user_logs ./data/processed/event_logs  > ./data/inventory.txt
+
+# 9. My coworker made changes that implied deleting ./data and all content. This change will be implemented after step 8, otherwise that step wouldn't work
+# But in addition it will delete all the work that I have done with my script
+rm -rf ./data 
 
 ###########################################
 
