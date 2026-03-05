@@ -60,8 +60,8 @@ touch ./data/inventory.txt
 ls ./data/processed/server_logs ./data/processed/user_logs ./data/processed/event_logs  > ./data/inventory.txt
 
 # 9. My coworker made changes that implied deleting ./data and all content. This change will be implemented after step 8, otherwise that step wouldn't work
-# But in addition it will delete all the work that I have done with my script
-rm -rf ./data 
+# But as it deletes everthing that I've done, I won't accept his changes
+# rm -rf ./data 
 
 ###########################################
 
